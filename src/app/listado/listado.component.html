@@ -1,0 +1,22 @@
+<section>
+  <div>
+    <div class="container">
+      <h1>Listado de Eventos/Reuniones</h1>
+        <div  *ngFor="let fila of eventos">
+          <ul class="list-group">
+            <li class="list-group-item nombre">{{ fila.nombre}}</li>
+            <li class="list-group-item">
+              <select class="form-control" id="asistencia">
+                <option>Asistir</option>
+                <option>No asistir</option>
+              </select></li>
+            <li class="list-group-item">
+              <p>Descripción: {{ fila.descripcion }}</p>
+              <p>Fecha: {{ fila.fecha }}</p>
+              <p>Dirección: {{ fila.direccion }}</p>
+              <button routerLink="/evento/{{ fila.id }}" class="btn btn-primary btn-block">Más info</button>
+          </ul>
+        </div>
+    </div>
+  </div>
+</section>

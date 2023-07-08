@@ -1,0 +1,54 @@
+<div class="container text-center">
+    <h1>REGISTRO</h1>
+    <img src="https://trome.com/resizer/XHCdbR6JenfQTgL9oEjzuWclzH4=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/B4BOQCW65JEBNILAI4L7QWF5TM.jpg" alt="Imagen de ejemplo" class="img-fluid mb-4">
+    <form #f="ngForm" (ngSubmit)="enviar(f)" action="" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="text" name="nombre" class="form-control" placeholder="Ingrese su nombre" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="text" name="apellido" class="form-control" placeholder="Ingrese su apellido" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" class="form-control" placeholder="Ingrese su contraseña" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="fecha_nacimiento">Fecha Nacimiento</label>
+        <input type="date" id="telefono" name="fecha_nacimiento" class="form-control" placeholder="Ingrese su fecha nacimiento" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Telefóno</label>
+        <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Ingrese su telefóno" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="plata">Plata</label>
+        <input type="number" id="plata" name="plata" class="form-control" placeholder="Ingrese su plata" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="ciudad">Ciudad</label>
+        <input type="text" id="ciudad" name="ciudad" class="form-control" placeholder="Ingrese su ciudad" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="yape">Yape</label>
+        <input type="text" id="yape" name="yape" class="form-control" placeholder="Ingrese su yape" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="plin">Plin</label>
+        <input type="text" id="plin" name="plin" class="form-control" placeholder="Ingrese su plin" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="genero">Genero</label>
+        <input type="text" id="genero" name="genero" class="form-control" placeholder="Ingrese su genero" required ngModel>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+        <button type="button" routerLink="/login" class="btn btn-primary btn-block">Iniciar Sesión</button>
+      </div>
+    </form>
+  </div>
