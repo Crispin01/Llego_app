@@ -1,0 +1,50 @@
+<div class="container text-center">
+    <h1>REGISTRO</h1>
+    <img src="https://trome.com/resizer/XHCdbR6JenfQTgL9oEjzuWclzH4=/1200x900/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/B4BOQCW65JEBNILAI4L7QWF5TM.jpg" alt="Imagen de ejemplo" class="img-fluid mb-4">
+    <form #f="ngForm" (ngSubmit)="enviar(f)" action="" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="text" name="nombre" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Descripción:</label>
+        <input type="textarea" id="text" name="descripcion" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="direccion">Dirección</label>
+        <input type="text" id="direccion" name="direccion" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="referencia">Referencia</label>
+        <input type="text" id="referencia" name="referencia" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="organizador">Organizador</label>
+        <input type="number" id="organizador" name="organizador" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="requisitos">Requisitos</label>
+        <input type="text" id="requisitos" name="requisitos" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <label for="motivo">Motivo</label>
+        <input type="text" id="motivo" name="motivo" class="form-control" required ngModel>
+      </div>
+      <div class="costo_total">
+        <label for="costo_total">Costo total</label>
+        <input type="number" id="costo_total" name="costo_total" class="form-control" required ngModel>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+      </div>
+    </form>
+  </div>
+
